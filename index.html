@@ -12,63 +12,82 @@
 <body>
 <header>
     <div class="barramenu">
-    <img src="img\logoclaro.png" width="40px">
-    <h3><a href="index.html">Viaje! | Viagens e Pacotes</a></h3>
-    <nav>
-        <ul>
-            <li><a href="index.html">Viagem da Vez</a></li>
-            <li><a href="dicas.html">Dicas de Viagens</a></li>
-            <li><a href="contato.html">Fale Conosco</a></li>
-        </ul>
-        <span class="material-symbols-outlined">
-            search
-            </span>
-        <input type="search">
-    </nav>
-    </div>
+        <a href="index.html"><img src="img\logoclaro.png" class="logo">
+        <h4>Viaje! | Viagens e Pacotes</a></h4>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Viagem da Vez</a></li>
+                <li><a href="dicas.html">Dicas de Viagens</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+            <img src="img/lupa.png" width="25px" height="25px">
+            <input type="search" class="busca">
+        </nav>
+        </div>
     <div class="imgprincipal">
-        <h4>de 20/11 a 25/11</h4>
+        <span class="tituloprincipal"><h5>de 20/11 a 25/11</h5>
         <h1>Bonito</h1>
         <div class="separa1"></div>
-        <h4>Mato Grosso</h4>
+        <h6>Mato Grosso</h6>
+    </span>
     </div>
     <div class="separa2"></div>
 </header>
 <main>
     <div class="roteiro">
         <h2>Confira nosso roteiro para 6 dias em Bonito!</h2>
-        <h5>Dia 1 - Flutuações</h5>
-        <h5>Dia 2 - Grutas</h5>
-        <h5>Dia 3 - Cachoeiras</h5>
-        <div class="imgdia1"></div>
-        <div class="imgdia2"></div>
-        <div class="imgdia3"></div>
-        <div class="dia1txt">Atividade de flutuação no Rio Sucuri, o terceiro mais cristalino do mundo, e na Lagoa Misteriosa.</div>
-        <div class="dia2txt">Visita às Grutas do Lago Azul e Grutas de São Miguel.</div>
-        <div class="dia3txt">Visita as cachoeiras Boca da Onça, Rio do Peixe e Porto da Ilha.</div>
-        <h5>Dia 4 - Esportes Radicais</h5>
-        <h5>Dia 5 - Buraco das Araras</h5>
-        <h5>Dia 6 - Mergulho</h5>
-        <div class="imgdia4"></div>
-        <div class="imgdia5"></div>
-        <div class="imgdia6"></div>
-        <div class="dia4txt">Atividades radicais, incluindo: Rafting, Boia Cross, Quadriciclo, Rapel, Arvorismo e Stand Up Paddle.</div>
-        <div class="dia5txt">Visita ao Buraco das Araras e seu conjunto de mirantes.</div>
-        <div class="dia6txt">Atividade de Mergulho com cilindro no Abismo Anhumas.</div>
-        <hr>
+        <div>
+            <div class="dia1">
+                <h5>Dia 1 - Flutuações</h5>
+                <div class="imgdia1"></div>
+                <p>Atividade de flutuação no Rio Sucuri, o terceiro mais cristalino do mundo, e na Lagoa Misteriosa.</p>
+            </div>
+            <div class="dia2">
+                <h5>Dia 2 - Grutas</h5>
+                <div class="imgdia2"></div>
+                <p>Visita às Grutas do Lago Azul e Grutas de São Miguel.</p>
+            </div>
+            <div class="dia3">
+                <h5>Dia 3 - Cachoeiras</h5>
+                <div class="imgdia3"></div>
+                <p>Visita as cachoeiras Boca da Onça, Rio do Peixe e Porto da Ilha.</p>
+            </div>
+        </div>
+        <div>
+            <div class="dia4">
+                <h5>Dia 4 - Esportes Radicais</h5>
+                <div class="imgdia4"></div>
+                <p>Atividades radicais, incluindo: Rafting, Boia Cross, Quadriciclo, Rapel, Arvorismo e Stand Up Paddle.</p>
+            </div>
+            <div class="dia5">
+                <h5>Dia 5 - Buraco das Araras</h5>
+                <div class="imgdia5"></div>
+                <p>Visita ao Buraco das Araras e seu conjunto de mirantes.</p>
+            </div>
+            <div class="dia6">
+                <h5>Dia 6 - Mergulho</h5>
+                <div class="imgdia6"></div>
+                <p>Atividade de Mergulho com cilindro no Abismo Anhumas.</p>
+            </div>
+        </div>
     </div>
-    <h2>Inscreva-se já para receber o roteiro completo e valores!</h2>
+    <div class="inscreve">
+    <h3>Inscreva-se já para receber o roteiro completo e valores!</h3></div> 
     <div class="pacote">
+        
         <form>
-            <h2>Quero receber o roteiro:</h2>
+            <h3>Quero receber o roteiro:</h3>
+            <img src="img/seta.png" width="120px">
+            <div>
             <label for="nome">Nome:*</label>
             <input type="text" id="nome" placeholder="Digite seu nome aqui" required="required">
             <label for="email">E-mail:*</label>
             <input type="email" id="email" placeholder="Digite seu e-mail aqui" required="required"> 
             <label for="cel">Celular:*</label>
             <input type="tel" id="cel" placeholder="Digice seu celular" required="required">
-            <input type="button" value="Enviar">
+            <input type="button" value="Enviar" class="submit"></div>
         </form>
+        <div>
         <h3>Confira também o hotel incluso no pacote:</h3>
         <ul>
             <li>Suíte para 2 pessoas ou Quartos para Família</li>
@@ -82,22 +101,23 @@
             <li>Serviço de Quarto</li>
             <li>Sacada</li>
         </ul>
-        <video width="600px" controls>
+        <video width="450px" controls>
             <source src="video\hotel.mp4">
         </video>
-    </div>
+    </div></div>
     <div class="separa3"></div>
     <div class="local">
-        <h2>Teremos um encontro especial no dia 08/10 as 19:00h para apresentar maiores informações</h2>
-        <h3>Endereço:  Av. das Amoreiras, nº 0 <br>
-            Jardim Paraíso de Viracopos - Campinas-SP</h3>
-        <a href="https://forms.gle/EUmuK4kVGv1CAAL69"><input type="button" value="Inscreva-se"></a>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.686689863265!2d-47.10897008516375!3d-22.961763045607412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c90e2087d16b%3A0x39e9c8794c61ef5e!2sAv.%20das%20Amoreiras%20-%20Jardim%20Paraiso%20de%20Viracopos%2C%20Campinas%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1665607001662!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <h2>Contamos com sua visita!<hr></h2>
+        <h3>Teremos um encontro especial no dia 08/10 as 19:00h para apresentar maiores informações</h3>
+        <div><span><p>Endereço:  Av. das Amoreiras, nº 0 <br>
+            Jardim Paraíso de Viracopos - Campinas-SP</p>
+        <a href="https://forms.gle/EUmuK4kVGv1CAAL69"><input type="button" value="Inscreva-se"></a></span>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.686689863265!2d-47.10897008516375!3d-22.961763045607412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c90e2087d16b%3A0x39e9c8794c61ef5e!2sAv.%20das%20Amoreiras%20-%20Jardim%20Paraiso%20de%20Viracopos%2C%20Campinas%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1665607001662!5m2!1spt-BR!2sbr" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div></div>
+    <div class="separa4"><h2>Contamos com sua visita!</h2></div>
 </main>
 </body>
 <footer>
-    Site criado por Nicoli Rotella Sartori <br>Esse é um site para fins educacionais, informações e imagens retiradas de: <a href="https://emalgumlugardomundo.com.br/">https://emalgumlugardomundo.com.br</a> e outros.
-</footer>
+    <div class="textofooter"><strong>Site criado por Nicoli Rotella Sartori</strong></div> 
+    <div class="textofooter">Esse é um site para fins educacionais, informações e imagens retiradas de: <a href="https://emalgumlugardomundo.com.br/">https://emalgumlugardomundo.com.br</a> e outros.</div>
+    </footer>
 </html>

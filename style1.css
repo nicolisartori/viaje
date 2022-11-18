@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.barramenu {
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: grid;
+    grid-template-columns: 5vw 60vw 35vw;
+    border: 1px solid rgb(228, 228, 228);
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+.busca {
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.logo {
+    height: 40px;
+    padding: 5px;
+    margin-left: 20px;
+    filter: brightness(0%);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    align-items: center;
+    justify-content: center;    
+}
+
+.textofooter {
+    padding: 5px;
+}
+
+.imgprincipal2 {
+    background-image: url("img/pag2/alpes.jpg");
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.separa1 {
+    background-color: #cea964;
+    width: 100px;
+    height: 10px;
+    margin-top: 10px;
+}
+
+.separa2 {
+    height: 90px;
+}
+
+h1 {
+    font-size: 4rem;
+    color: white;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: white;
+    font-weight: 500;   
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #827153;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.4rem;
+    color: #cea964;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+h5 {
+
+    font-size: 1rem;
+    color: white;
+    font-weight: 300;  
+}
+
+main a:link {
+    color: rgb(0, 0, 0);
+}
+
+main a:visited {
+    color: rgb(0, 0, 0);
+}
+
+main a:active {
+    color:black;
+}
+
+main a:hover {
+    color: black;
+}
+
+footer a:link {
+    color: rgb(0, 0, 0);
+}
+
+footer a:visited {
+    color: rgb(0, 0, 0);
+}
+
+footer a:active {
+    color:black;
+}
+
+footer a:hover {
+    color: black;
+}
+
+nav a:link {
+    color: rgb(0, 0, 0);
+}
+
+nav a:visited {
+    color: rgb(0, 0, 0);
+}
+
+nav a:active {
+    color:black;
+}
+
+nav a:hover {
+    color: black;
+}
+h4 a:link {
+    color: #cea964;
+}
+
+h4 a:visited {
+    color: #cea964;
+}
+
+h4 a:active {
+    color: #cea964;
+}
+
+h4 a:hover {
+    color: #cea964;
+}
+
+
+.roteiro {
+    height: 200px;
+    background-color: #827153;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoroteiro {
+    padding: 20px;
+}
+
+.peru {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px; 
+}
+
+.imgperu {
+    width: 480px;
+    height: 280px;
+    margin-left: 200px;
+    background-image: url("img/pag2/peru.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textoperu {
+    padding: 30px;
+    width: 550px;
+}
+
+.berlim {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #f7f4ee;
+    padding: 20px;
+}
+
+.imgberlim {
+    width: 480px;
+    height: 280px;
+    margin-left: 200px;
+    background-image: url("img/pag2/berlim.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textoberlim {
+    padding: 30px;
+    width: 550px;
+}
+
+.patagonia {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px; 
+}
+
+.imgpatagonia {
+    width: 480px;
+    height: 280px;
+    margin-left: 200px;
+    background-image: url("img/pag2/patagonia.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textopatagonia {
+    padding: 30px;
+    width: 550px;
+}
+
+.maranhenses {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #f7f4ee;
+    padding: 20px; 
+}
+
+.imgmaranhenses {
+    width: 480px;
+    height: 280px;
+    margin-left: 200px;
+    background-image: url("img/pag2/maranhenses.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textomaranhenses {
+    padding: 30px;
+    width: 550px;
+}
+
+.canela {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px; 
+}
+
+.imgcanela {
+    width: 480px;
+    height: 280px;
+    margin-left: 200px;
+    background-image: url("img/pag2/canela.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textocanela {
+    padding: 30px;
+    width: 550px;
+}
+
+.maragogi {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #f7f4ee;
+    padding: 20px; 
+}
+
+.imgmaragogi {
+    width: 480px;
+    height: 280px;
+    margin-left: 200px;
+    background-image: url("img/pag2/maragogi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textomaragogi {
+    padding: 30px;
+    width: 550px;
+}
