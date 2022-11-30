@@ -9,16 +9,23 @@
 }
 
 .barramenu {
-    background-color: rgb(255, 255, 255);
+    color:white
     height: 50px;
     position: fixed;
     top: 0px;
     left: 0px;
     display: grid;
     grid-template-columns: 5vw 60vw 35vw;
-    border: 1px solid rgb(228, 228, 228);
     align-items: center;
+    transition: 0.8s;
 }
+
+.barramenu.ativo {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(228, 228, 228);
+    transition: 0.8s;
+}
+
 
 .menu {
     display: flex;
@@ -134,20 +141,45 @@ nav a:active {
 nav a:hover {
     color: black;
 }
+
 h4 a:link {
-    color: #cea964;
+    color: #000000;
+    transition: 0.8s;
 }
 
 h4 a:visited {
-    color: #cea964;
+    color: #000000;
+    transition: 0.8s;
 }
 
 h4 a:active {
-    color: #cea964;
+    color: #000000;
+    transition: 0.8s;
 }
 
 h4 a:hover {
+    color: #000000;
+    transition: 0.8s;
+}
+
+h4 a:link.ativo {
     color: #cea964;
+    transition: 0.8s;
+}
+
+h4 a:visited.ativo {
+    color: #cea964;
+    transition: 0.8s;
+}
+
+h4 a:active.ativo {
+    color: #cea964;
+    transition: 0.8s;
+}
+
+h4 a:hover.ativo {
+    color: #cea964;
+    transition: 0.8s;
 }
 
 h1 {
@@ -240,6 +272,18 @@ form input {
     background-color: #f7f4ee;
     border: 1px solid #cea964;
     width: 200px;
+}
+
+textarea {
+    margin-bottom: 10px;
+    background-color: #f7f4ee;
+    border: 1px solid #cea964;
+    font-size: 0.8rem;
+}
+
+form input#texto {
+ height: 80px;
+ margin-top: 0;
 }
 
 select {
