@@ -276,6 +276,25 @@ nav li#l3 a:hover {
     transition: 0.8s;
 }
 
+h1 a:link {
+    color: #ffffff;
+    transition: 0.8s;
+}
+
+h1 a:visited {
+    color: #ffffff;
+    transition: 0.8s;
+}
+
+h1 a:active {
+    color: #ffffff;
+    transition: 0.8s;
+}
+
+h1 a:hover {
+    color: #ffffff;
+    transition: 0.8s;
+}
 
 h4 a:link {
     color: #ffffff;
