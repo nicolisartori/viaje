@@ -1,15 +1,15 @@
   window.addEventListener('scroll', function(){
-    var menu = document.querySelector('nav li#l1');
+    var menu = document.querySelector('.menu');
     menu.classList.toggle('ativo', window.scrollY > 0);
   })
 
   window.addEventListener('scroll', function(){
-    var menu = document.querySelector('nav li#l2');
+    var menu = document.querySelector('.menu');
     menu.classList.toggle('ativo', window.scrollY > 0);
   })
 
   window.addEventListener('scroll', function(){
-    var menu = document.querySelector('nav li#l3');
+    var menu = document.querySelector('.menu');
     menu.classList.toggle('ativo', window.scrollY > 0);
   })
 
@@ -29,7 +29,12 @@
   })
 
   window.addEventListener('scroll', function(){
-    var menu = document.querySelector('nav img');
+    var menu = document.querySelector('.lupa');
+    menu.classList.toggle('ativo', window.scrollY > 0);
+  })
+
+  window.addEventListener('scroll', function(){
+    var menu = document.querySelector('.menusub');
     menu.classList.toggle('ativo', window.scrollY > 0);
   })
 

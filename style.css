@@ -8,13 +8,19 @@
     text-decoration: none;
 }
 
+:root {
+    --amarelo: #cea964;
+    --marrom: #827153;
+}
+
+
 .barramenu {
+    color:white;
     height: 50px;
     position: fixed;
     top: 0px;
     left: 0px;
-    display: grid;
-    grid-template-columns: 5vw 60vw 35vw;
+    width: 100%;
     align-items: center;
     transition: 0.8s;
 }
@@ -25,13 +31,41 @@
     transition: 0.8s;
 }
 
+.titulomenu {
+    margin-right: 640px;
+    padding-top: 10px;
+    padding-left: 10;
+}
+
 .menu {
     display: flex;
     list-style: none;
 }
 
+.menu ul li {
+    display: none;
+}
+
+.menu li:hover ul li {
+    display: block;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.menusub {
+    margin: 10px;
+    background-color: var(--marrom);
+}
+
+.menusub.ativo {
+    background-color: white;
+    margin: 10px;
+}
+
 li {
-    padding: 10px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
 }
 
 nav {
@@ -42,7 +76,13 @@ nav {
     width: 100px;
     height: 30px;
     margin-left: 5px;
+    margin-top: 10px;
 }
+
+.lupa {
+    padding-top: 10px;
+}
+
 
 .logo {
     height: 40px;
@@ -95,7 +135,7 @@ footer {
 }
 
 .separa1 {
-    background-color: #cea964;
+    background-color: var(--amarelo);
     width: 100px;
     height: 10px;
     margin-top: 10px;
@@ -119,13 +159,13 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    color: #827153;
+    color: var(--marrom);
     font-weight: 600;
 }
 
 h4 {
     font-size: 1.4rem;
-    color: #cea964;
+    color: var(--amarelo);
     font-weight: 500;
     text-decoration: none;
 }
@@ -160,8 +200,6 @@ main a:hover {
     color: rgb(0, 0, 0);
 }
 
-
-
 footer a:link {
     color: rgb(0, 0, 0);
 }
@@ -176,126 +214,6 @@ footer a:active {
 
 footer a:hover {
     color: black;
-}
-
-nav li#l1 a:link {
-    color: white;
-    transition: 0.8s;
-}
-
-nav li#l1 a:visited {
-    color: white;
-    transition: 0.8s;
-}
-
-nav li#l1 a:active {
-    color: white;
-    transition: 0.8s;
-}
-
-nav li#l1 a:hover {
-    color: white;
-    transition: 0.8s;
-}
-
-nav li#l1.ativo a:link {
-    color: black;
-    transition: 0.8s;
-}
-
-nav li#l1.ativo a:visited {
-    color: black;
-    transition: 0.8s;
-}
-
-nav li#l1 a:active {
-    color: black;
-    transition: 0.8s;
-}
-
-nav li#l1 a:hover {
-    color: rgb(255, 255, 255);
-    transition: 0.8s;
-}
-
-nav li#l2 a:link {
-    color: white;
-    transition: 0.8s;
-}
-
-nav li#l2 a:visited {
-    color: white;
-    transition: 0.8s;
-}
-
-nav li#l2 a:active {
-    color: white;
-    transition: 0.8s;
-}
-
-nav li#l2 a:hover {
-    color: white;
-    transition: 0.8s;
-}
-
-nav li#l2.ativo a:link {
-    color: black;
-    transition: 0.8s;
-}
-
-nav li#l2.ativo a:visited {
-    color: black;
-    transition: 0.8s;
-}
-
-nav li#l2 a:active {
-    color: black;
-    transition: 0.8s;
-}
-
-nav li#l2 a:hover {
-    color: rgb(255, 255, 255);
-    transition: 0.8s;
-}
-
-nav li#l3 a:link {
-    color: white;
-    transition: 0.8s;
-}
-
-nav li#l3 a:visited {
-    color: white;
-    transition: 0.8s;
-}
-
-nav li#l3 a:active {
-    color: white;
-    transition: 0.8s;
-}
-
-nav li#l3 a:hover {
-    color: white;
-    transition: 0.8s;
-}
-
-nav li#l3.ativo a:link {
-    color: black;
-    transition: 0.8s;
-}
-
-nav li#l3.ativo a:visited {
-    color: black;
-    transition: 0.8s;
-}
-
-nav li#l3 a:active {
-    color: black;
-    transition: 0.8s;
-}
-
-nav li#l3 a:hover {
-    color: rgb(255, 255, 255);
-    transition: 0.8s;
 }
 
 h1 a:link {
@@ -339,27 +257,67 @@ h4 a:hover {
 }
 
 h4 a:link.ativo {
-    color: #cea964;
+    color: var(--amarelo);
     transition: 0.8s;
 }
 
 h4 a:visited.ativo {
-    color: #cea964;
+    color: var(--amarelo);
     transition: 0.8s;
 }
 
 h4 a:active.ativo {
-    color: #cea964;
+    color: var(--amarelo);
     transition: 0.8s;
 }
 
 h4 a:hover.ativo {
-    color: #cea964;
+    color: var(--amarelo);
     transition: 0.8s;
 }
 
 nav img.ativo {
     filter: brightness(0%);
+    transition: 0.8s;
+}
+
+.menu a:link {
+    color: white;
+    transition: 0.8s;
+}
+
+.menu a:visited {
+    color: white;
+    transition: 0.8s;
+}
+
+.menu a:active {
+    color: white;
+    transition: 0.8s;
+}
+
+.menu a:hover {
+    color: white;
+    transition: 0.8s;
+}
+
+.menu.ativo a:link {
+    color: black;
+    transition: 0.8s;
+}
+
+.menu.ativo a:visited {
+    color: black;
+    transition: 0.8s;
+}
+
+.menu a:active {
+    color: black;
+    transition: 0.8s;
+}
+
+.menu a:hover {
+    color: rgb(255, 255, 255);
     transition: 0.8s;
 }
 
@@ -412,7 +370,7 @@ nav img.ativo {
 }
 
 .roteiro {
-    background-color: #827153;
+    background-color: var(--marrom);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -486,7 +444,7 @@ form {
 form input {
     margin-bottom: 30px;
     background-color: #f7f4ee;
-    border: 1px solid #cea964;
+    border: 1px solid var(--amarelo);
     width: 300px;
     height: 30px;
     margin-top: 5px;
@@ -508,7 +466,7 @@ form img {
     margin-top: 2rem;
     border: none;
     border-radius: 2px;
-    background-color: #cea964;
+    background-color: var(--amarelo);
     color: white;
     font-size: 1.1rem;
 }
@@ -518,13 +476,13 @@ video {
 }
 
 .separa3 {
-        background-color: #827153;
+        background-color: var(--marrom);
         height: 90px;
         margin-top: 40px;
 }
 
 .separa4 {
-    background-color: #827153;
+    background-color: var(--marrom);
     height: 120px;
     justify-content: center;
     display: flex;
@@ -538,7 +496,7 @@ video {
 }
 
 .local p {
-    color: #827153;
+    color: var(--marrom);
     font-weight: 600;
     font-size: 1.2rem;
     margin-bottom: 60px;
@@ -564,7 +522,7 @@ video {
 .local input {
     width: 400px;
     height: 40px;
-    background-color: #827153;
+    background-color: var(--marrom);
     color: white;
     outline: none;
     border: none;

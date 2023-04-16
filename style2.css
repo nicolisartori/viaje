@@ -8,14 +8,18 @@
     text-decoration: none;
 }
 
+:root {
+    --amarelo: #cea964;
+    --marrom: #827153;
+}
+
 .barramenu {
-    color:white
+    color:white;
     height: 50px;
     position: fixed;
     top: 0px;
     left: 0px;
-    display: grid;
-    grid-template-columns: 5vw 60vw 35vw;
+    width: 100%;
     align-items: center;
     transition: 0.8s;
 }
@@ -26,14 +30,34 @@
     transition: 0.8s;
 }
 
+.titulomenu {
+    margin-right: 640px;
+}
 
 .menu {
     display: flex;
     list-style: none;
 }
 
+.menu ul li {
+    display: none;
+}
+
+.menu li:hover ul li {
+    display: block;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.menusub {
+    background-color: white;
+    margin: 10px;
+}
+
 li {
-    padding: 10px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
 }
 
 nav {
@@ -44,6 +68,11 @@ nav {
     width: 100px;
     height: 30px;
     margin-left: 5px;
+    margin-top: 10px;
+}
+
+.lupa {
+    padding-top: 10px;
 }
 
 .logo {
@@ -83,7 +112,7 @@ footer {
 }
 
 .separa1 {
-    background-color: #cea964;
+    background-color: var(--amarelo);
     width: 100px;
     height: 10px;
     margin-top: 10px;
@@ -163,22 +192,22 @@ h4 a:hover {
 }
 
 h4 a:link.ativo {
-    color: #cea964;
+    color: var(--amarelo);
     transition: 0.8s;
 }
 
 h4 a:visited.ativo {
-    color: #cea964;
+    color: var(--amarelo);
     transition: 0.8s;
 }
 
 h4 a:active.ativo {
-    color: #cea964;
+    color: var(--amarelo);
     transition: 0.8s;
 }
 
 h4 a:hover.ativo {
-    color: #cea964;
+    color: var(--amarelo);
     transition: 0.8s;
 }
 
@@ -196,15 +225,16 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    color: #827153;
+    color: var(--marrom);
     font-weight: 600;
 }
 
 h4 {
     font-size: 1.4rem;
-    color: #cea964;
+    color: var(--amarelo);
     font-weight: 500;
     text-decoration: none;
+    padding: 10px;
 }
 
 h5 {
@@ -270,14 +300,14 @@ form h3 {
 form input {
     margin-bottom: 30px;
     background-color: #f7f4ee;
-    border: 1px solid #cea964;
+    border: 1px solid var(--amarelo);
     width: 200px;
 }
 
 textarea {
     margin-bottom: 10px;
     background-color: #f7f4ee;
-    border: 1px solid #cea964;
+    border: 1px solid var(--amarelo);
     font-size: 0.8rem;
 }
 
@@ -289,7 +319,7 @@ form input#texto {
 select {
     margin-bottom: 30px;
     background-color: #f7f4ee;
-    border: 1px solid #cea964;
+    border: 1px solid var(--amarelo);
     width: 200px;
 }
 
@@ -299,7 +329,7 @@ select {
     margin-top: 2rem;
     border: none;
     border-radius: 2px;
-    background-color: #cea964;
+    background-color: var(--amarelo);
     color: white;
     font-size: 1.1rem;
 }
