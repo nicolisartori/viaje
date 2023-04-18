@@ -245,13 +245,97 @@ h5 {
 }
 
 .roteiro {
-
     height: 100px;
     background-color: #f7f4ee;
     display: flex;
-    flex-direction: column;
+    flex-direction: line;
     align-items: center;
-    justify-content: center;
+    justify-content:space-around;
+}
+
+.cards {
+    height: 100px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: line;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.card1 {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    box-shadow: 5px 5px 10px 1px rgb(148, 179, 244);
+    border: 5px double rgb(226, 232, 245);
+
+}
+
+.card2 {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    box-shadow: 5px 5px 10px 1px rgb(222, 127, 161);
+    border: 5px double rgb(245, 226, 233);
+
+}
+
+.card3 {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    box-shadow: 5px 5px 10px 1px rgb(126, 174, 141);
+    border: 5px double rgb(226, 245, 232);
+
+}
+
+.titulocard {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.frasecard {
+    padding-bottom: 30px;
+}
+
+
+.card1 button {
+    cursor: pointer;
+    border-color: rgb(148, 179, 244);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(226, 232, 245);
+}
+
+.card2 button {
+    cursor: pointer;
+    border-color: rgb(222, 127, 161);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(245, 226, 233);
+}
+
+.card3 button {
+    cursor: pointer;
+    border-color: rgb(126, 174, 141);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(226, 245, 232);
+}
+
+.separa3 {
+    background-color: var(--marrom);
+    height: 20px;
+    margin-top: 40px;
 }
 
 main {
