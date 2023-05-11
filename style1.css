@@ -31,10 +31,6 @@
     transition: 0.8s;
 }
 
-.drop {
-    
-}
-
 .titulomenu {
     margin-right: 640px;
     padding-top: 10px;
@@ -299,7 +295,7 @@ h4 a:hover.ativo {
 }
 
 .roteiro {
-    height: 200px;
+    height: 310px;
     background-color: var(--marrom);
     display: flex;
     flex-direction: column;
@@ -308,7 +304,11 @@ h4 a:hover.ativo {
 }
 
 .textoroteiro {
-    padding: 20px;
+    padding: 10px;
+}
+
+.roteiro p {
+    color: white;
 }
 
 .peru {
@@ -437,4 +437,34 @@ h4 a:hover.ativo {
 nav img.ativo {
     filter: brightness(0%);
     transition: 0.8s;
+}
+
+@keyframes animacao {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    95% { margin-left: -300%; }
+    100% { margin-left: -400%; }
+}
+
+.galery {
+    width: 320px;
+    height: 180px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.galery .fotos {
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.galery .fotos img {
+    width: 19.8%;
 }
