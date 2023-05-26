@@ -468,3 +468,181 @@ nav img.ativo {
 .galery .fotos img {
     width: 19.8%;
 }
+
+@media (min-width: 100px) and (max-width: 799px){
+    .titulomenu {
+        margin-right: 1px;
+    }
+
+    .lupa {
+        display: none;
+    }
+
+    .busca {
+        display: none;
+    }
+
+    .barramenu {
+        height: 70px;
+    }
+    .tituloprincipal {
+        margin-left: 1px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .imgprincipal2 {
+        background-position: 95% 75%;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    .imgperu {
+        width: 240px;
+        height: 140px;
+        margin-left: 5px;
+        margin-top: 50px;
+        background-image: url("img/pag2/peru.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .textoperu {
+        padding: 15px;
+        width: 550px;
+    }
+    
+    .imgberlim {
+        width: 240px;
+        height: 140px;
+        margin-left: 5px;
+        margin-top: 50px;
+        background-image: url("img/pag2/berlim.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .textoberlim {
+        padding: 30px;
+        width: 550px;
+    }
+    
+    .imgpatagonia {
+        width: 240px;
+        height: 140px;
+        margin-left: 5px;
+        margin-top: 50px;
+        background-image: url("img/pag2/patagonia.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .textopatagonia {
+        padding: 30px;
+        width: 550px;
+    }
+    
+    .imgmaranhenses {
+        width: 240px;
+        height: 140px;
+        margin-left: 5px;
+        margin-top: 50px;
+        background-image: url("img/pag2/maranhenses.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .textomaranhenses {
+        padding: 30px;
+        width: 550px;
+    }
+    
+    .imgcanela {
+        width: 240px;
+        height: 140px;
+        margin-left: 5px;
+        margin-top: 50px;
+        background-image: url("img/pag2/canela.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .textocanela {
+        padding: 30px;
+        width: 550px;
+    }
+    
+    .imgmaragogi {
+        width: 240px;
+        height: 140px;
+        margin-left: 5px;
+        margin-top: 50px;
+        background-image: url("img/pag2/maragogi.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .textomaragogi {
+        padding: 30px;
+        width: 550px;
+    }
+
+}
+
+@media (min-width: 800px) and (max-width: 900px){
+    .titulomenu {
+        margin-right: 10px;
+    }
+    .tituloprincipal {
+        margin-left: 1px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .imgprincipal2 {
+        background-position: 60% 75%;
+    }
+
+    main {
+        padding: 400px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1199px){
+    .titulomenu {
+        margin-right: 30px;
+    }
+
+    .tituloprincipal {
+        margin-left: 400px;
+    }
+    .imgprincipal2 {
+        background-position: 99% 75%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px){
+    .titulomenu {
+        margin-right: 360px;
+    }
+
+    .tituloprincipal {
+        margin-left: 800px;
+    }
+    .imgprincipal2 {
+        background-position: 90% 75%;
+    }
+}

@@ -31,6 +31,28 @@
     transition: 0.8s;
 }
 
+.logo {
+    height: 40px;
+    padding: 5px;
+    margin-left: 20px;
+    transition: 0.8s;
+}
+
+.logo.ativo {
+    filter: brightness(0%);
+    transition: 0.8s;
+}
+
+.menusub {
+    margin: 10px;
+    background-color: var(--marrom);
+}
+
+.menusub.ativo {
+    background-color: white;
+    margin: 10px;
+}
+
 .titulomenu {
     margin-right: 640px;
     padding-top: 10px;
@@ -49,16 +71,6 @@
 .menu li:hover ul li {
     display: block;
     border: 1px solid rgb(228, 228, 228);
-}
-
-.menusub {
-    margin: 10px;
-    background-color: var(--marrom);
-}
-
-.menusub.ativo {
-    background-color: white;
-    margin: 10px;
 }
 
 li {
@@ -81,19 +93,6 @@ nav {
 
 .lupa {
     padding-top: 10px;
-}
-
-
-.logo {
-    height: 40px;
-    padding: 5px;
-    margin-left: 20px;
-    transition: 0.8s;
-}
-
-.logo.ativo {
-    filter: brightness(0%);
-    transition: 0.8s;
 }
 
 footer {
@@ -460,17 +459,6 @@ form img {
     margin-top: 30px;   
 }
 
-.submit {
-    cursor: pointer;
-    width: 300px;
-    margin-top: 2rem;
-    border: none;
-    border-radius: 2px;
-    background-color: var(--amarelo);
-    color: white;
-    font-size: 1.1rem;
-}
-
 video {
     margin-top: 20px;
 }
@@ -535,6 +523,18 @@ form img {
     z-index: -1;
 }
 
+.submit {
+    cursor: pointer;
+    width: 300px;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--amarelo);
+    color: white;
+    font-size: 1.1rem;
+    animation: botao 0.8s ease-in infinite;
+}
+
 @keyframes pisca {
     from {
         filter: brightness(70%);
@@ -544,5 +544,135 @@ form img {
         filter: brightness(90%);
         transition: 1s;
     }
-    
+}
+
+@keyframes botao {
+        from {
+            background-color: var(--marrom);
+            transition: 1s;
+        }
+        to {
+            background-color: --;
+            transition: 1s;
+        }
+}
+
+@media (min-width: 100px) and (max-width: 799px){
+    .titulomenu {
+        margin-right: 1px;
     }
+
+    .lupa {
+        display: none;
+    }
+
+    .busca {
+        display: none;
+    }
+
+    .barramenu {
+        height: 70px;
+    }
+    .tituloprincipal {
+        margin-left: 1px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .imgprincipal {
+        background-position: 95% 75%;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+    .inscreve h3 {
+        font-size: 1.1rem;
+    }
+
+    .pacote {
+        display: block;
+    }
+
+    form {
+        width: 90vw;
+    }
+    
+    .confira {
+        padding-left: 40px;
+    }
+
+    video {
+        width: 400px;
+    }
+    
+    .roteiro div {
+        display: block;
+    }
+
+    .local div {
+        display: block;
+    }
+
+    .local p {
+        font-size: 1rem;
+    }
+
+    iframe {
+        width: 400px;
+        padding-top: 50px;
+    }
+
+}
+
+@media (min-width: 800px) and (max-width: 900px){
+    .titulomenu {
+        margin-right: 10px;
+    }
+    .tituloprincipal {
+        margin-left: 1px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .imgprincipal {
+        background-position: 60% 75%;
+    }
+
+    main {
+        padding: 400px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1199px){
+    .titulomenu {
+        margin-right: 30px;
+    }
+
+    .tituloprincipal {
+        margin-left: 400px;
+    }
+    .imgprincipal {
+        background-position: 99% 75%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px){
+    .titulomenu {
+        margin-right: 360px;
+    }
+
+    .tituloprincipal {
+        margin-left: 800px;
+    }
+    .imgprincipal {
+        background-position: 90% 75%;
+    }
+}
